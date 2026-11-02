@@ -34,14 +34,6 @@ body::before {
 }
 a { color: inherit; }
 .wrap { max-width: 1080px; margin: 0 auto; padding: 0 28px; }
-.eyebrow {
-  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
-  font-size: 11px;
-  letter-spacing: 0.42em;
-  color: var(--gold-deep);
-  text-transform: uppercase;
-  margin-bottom: 28px;
-}
 
 /* header */
 .site-head {
@@ -58,7 +50,7 @@ a { color: inherit; }
 .wordmark { font-size: 13px; letter-spacing: 0.28em; color: var(--ink); }
 .head-note {
   font-family: "Hiragino Kaku Gothic ProN", sans-serif;
-  font-size: 10px; letter-spacing: 0.34em; text-transform: uppercase; color: var(--gold-deep);
+  font-size: 10px; letter-spacing: 0.34em; text-transform: uppercase; color: var(--faint);
 }
 
 /* hero */
@@ -89,13 +81,7 @@ a { color: inherit; }
   letter-spacing: 0.05em;
   color: var(--ink);
 }
-.hero h1 .accent { color: var(--gold-deep); }
 .hero-sub { margin-top: 36px; max-width: 520px; font-size: 15.5px; color: var(--ink-dim); }
-.hero-meta {
-  margin-top: 44px;
-  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
-  font-size: 11.5px; letter-spacing: 0.3em; color: var(--faint);
-}
 .cta {
   display: inline-block;
   margin-top: 52px;
@@ -108,6 +94,25 @@ a { color: inherit; }
   transition: background 0.35s ease, color 0.35s ease;
 }
 .cta:hover { background: var(--ink); color: var(--paper); }
+/* photo band */
+.photo-band {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+.photo-band img {
+  display: block;
+  width: 100%;
+  height: clamp(170px, 32vw, 340px);
+  object-fit: cover;
+  object-position: center 62%;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+@media (max-width: 560px) {
+  .photo-band { padding: 0 22px; }
+}
+
 .scroll-hint {
   margin-top: 72px;
   font-family: "Hiragino Kaku Gothic ProN", sans-serif;
@@ -144,7 +149,7 @@ a { color: inherit; }
 .bento-cell { border: 1px solid var(--line); padding: 34px 32px; background: var(--card); }
 .bento-cell h3 { font-size: 16.5px; font-weight: 500; letter-spacing: 0.06em; margin-bottom: 10px; }
 .bento-cell p { font-size: 13.5px; color: var(--ink-dim); line-height: 1.85; }
-.cell-num, .step-num {
+.step-num {
   font-family: "Hiragino Kaku Gothic ProN", sans-serif;
   font-size: 11px; letter-spacing: 0.3em; color: var(--gold-deep); margin-bottom: 16px;
 }
@@ -155,7 +160,7 @@ a { color: inherit; }
 
 /* flow */
 .flow { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-.flow-step { border-top: 1px solid var(--gold); padding: 28px 6px 0; }
+.flow-step { border-top: 1px solid var(--line); padding: 28px 6px 0; }
 .flow-step h3 { font-size: 17px; font-weight: 500; letter-spacing: 0.06em; margin-bottom: 10px; }
 .flow-step p { font-size: 13.5px; color: var(--ink-dim); }
 @media (max-width: 700px) { .flow { grid-template-columns: 1fr; } }
@@ -166,16 +171,16 @@ a { color: inherit; }
   padding: 20px 0;
   border-bottom: 1px solid var(--line);
   font-size: 14.5px;
-  display: flex; gap: 20px; align-items: baseline;
 }
-.rule li span {
-  color: var(--gold-deep);
-  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
-  font-size: 11px; letter-spacing: 0.2em; flex-shrink: 0;
-}
-.partners-note { margin-top: 44px; font-size: 13.5px; color: var(--ink-dim); max-width: 640px; }
+
+.about-meta { margin-top: 30px; font-size: 13.5px; color: var(--faint); letter-spacing: 0.06em; }
 
 /* contact */
+.routes { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 8px; }
+.route { border-top: 1px solid var(--line); padding: 26px 6px 0; }
+.route h3 { font-size: 17px; font-weight: 500; letter-spacing: 0.06em; margin-bottom: 10px; }
+.route p { font-size: 14px; color: var(--ink-dim); max-width: 460px; }
+@media (max-width: 700px) { .routes { grid-template-columns: 1fr; } }
 .contact { text-align: left; }
 .contact-title { font-size: clamp(30px, 6vw, 52px); font-weight: 500; letter-spacing: 0.06em; margin-bottom: 24px; }
 .contact-text { max-width: 520px; color: var(--ink-dim); font-size: 15px; }
@@ -209,7 +214,6 @@ footer p { font-size: 12.5px; letter-spacing: 0.2em; }
   .fixed-bar { justify-content: center; }
   .wordmark { font-size: 11px; letter-spacing: 0.16em; }
   .head-note { font-size: 9px; letter-spacing: 0.24em; }
-  .hero-meta { letter-spacing: 0.18em; line-height: 2.1; }
   .site-head { padding: 24px 20px; }
   .hero { padding-left: 22px; padding-right: 22px; }
 }

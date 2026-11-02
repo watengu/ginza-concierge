@@ -8,27 +8,28 @@ export default function Page() {
 
       <section className="hero">
         <p className="preopen fade d1">Pre-Open — テスト公開中（オープン前）</p>
-        <p className="eyebrow fade d1">Ginza Executive Concierge</p>
         <h1 className="fade d2">
           銀座で、ゲームを囲む
           <br />
-          <span className="accent">静かな時間</span>を。
+          静かな時間を。
         </h1>
         <p className="hero-sub fade d3">
           知る人ぞ知る方々へ、銀座の開かれた場所でお会いする、完全紹介制のご案内です。
         </p>
-        <p className="hero-meta fade d4">完全紹介制　・　審査制　・　日本語でのご案内</p>
-        <div className="fade d5">
+        <div className="fade d4">
           <a className="cta" href="#contact">
             問い合わせる
           </a>
         </div>
-        <p className="scroll-hint fade d6">Scroll</p>
+        <p className="scroll-hint fade d5">Scroll</p>
+      </section>
+
+      <section className="photo-band" aria-hidden="false">
+        <img src="fv-ginza-dusk-v1.webp" alt="夕方の銀座の街並み" />
       </section>
 
       <section className="block">
         <div className="wrap">
-          <p className="eyebrow">About</p>
           <div className="bento">
             <div className="bento-main">
               <h2>全部は、見せません。</h2>
@@ -38,32 +39,28 @@ export default function Page() {
               </p>
             </div>
             <div className="bento-cell">
-              <p className="cell-num">01</p>
               <h3>審査と本人確認</h3>
-              <p>ご利用・掲載のいずれも、事前の審査と本人確認、規約へのご同意が前提です。</p>
+              <p>ご利用・掲載とも、審査と本人確認が前提です。</p>
             </div>
             <div className="bento-cell">
-              <p className="cell-num">02</p>
               <h3>公共の空間のみ</h3>
-              <p>お会いするのはラウンジ・カフェ・店舗・街歩き。客室や個室には入りません。</p>
+              <p>場所はラウンジ・カフェ・店舗・街歩きのみ。個室には入りません。</p>
             </div>
             <div className="bento-cell">
-              <p className="cell-num">03</p>
               <h3>接触は含みません</h3>
-              <p>体験の核はゲームの共有と銀座のアテンド（同行・ご案内）です。</p>
+              <p>体験の核は、ゲームの共有と銀座の同行案内です。</p>
             </div>
             <div className="bento-cell">
-              <p className="cell-num">04</p>
               <h3>夕方までの時間</h3>
-              <p>ご案内は15:00〜20:30の範囲に限ります。早めに終えることも安全方針のひとつです。</p>
+              <p>ご案内は15:00〜20:30の範囲に限ります。</p>
             </div>
           </div>
+          <p className="about-meta">完全紹介制・審査制で、ご案内は日本語です。</p>
         </div>
       </section>
 
       <section className="block">
         <div className="wrap">
-          <p className="eyebrow">Flow</p>
           <h2 className="block-title">扉の開き方</h2>
           <div className="flow">
             <div className="flow-step">
@@ -87,40 +84,34 @@ export default function Page() {
 
       <section className="block tint">
         <div className="wrap">
-          <p className="eyebrow">Our Rules</p>
           <h2 className="block-title">お約束</h2>
           <ul className="rule">
-            <li>
-              <span>01</span>
-              お会いする場所は、公共の空間に限ります。客室・個室・私有空間には入りません
-            </li>
-            <li>
-              <span>02</span>
-              身体への接触は、サービスに含みません。依頼があってもお応えしません
-            </li>
-            <li>
-              <span>03</span>
-              ご利用はご紹介のある方のみ。本人確認と規約へのご同意が完了するまで、ご案内は確定しません
-            </li>
-            <li>
-              <span>04</span>
-              パートナーはいつでも、理由を説明せずセッションを中止できます
-            </li>
+            <li>お会いする場所は、公共の空間に限ります。客室・個室・私有空間には入りません</li>
+            <li>身体への接触は、サービスに含みません。依頼があってもお応えしません</li>
+            <li>ご利用はご紹介のある方のみ。本人確認と規約へのご同意が完了するまで、ご案内は確定しません</li>
+            <li>パートナーはいつでも、理由を説明せずセッションを中止できます</li>
           </ul>
-          <p className="partners-note">
-            掲載をご希望の方へ — 掲載も審査制です。ご紹介のある方のみ、本人確認と面談を経てご案内します。詳細はお問い合わせの際に。
-          </p>
         </div>
       </section>
 
       <section className="block" id="contact">
         <div className="wrap contact">
-          <p className="eyebrow">Contact</p>
           <h2 className="contact-title">詳細は、扉の奥に。</h2>
-          <p className="contact-text">
-            ご紹介のある方は、紹介者の方のお名前を添えてお問い合わせください。
-            内容を確認のうえ、個別にご案内します。
-          </p>
+          <div className="routes">
+            <div className="route">
+              <h3>ご利用の問い合わせ</h3>
+              <p>
+                ご紹介のある方は、紹介者の方のお名前を添えてお問い合わせください。
+                内容を確認のうえ、個別にご案内します。
+              </p>
+            </div>
+            <div className="route">
+              <h3>掲載の問い合わせ</h3>
+              <p>
+                掲載も審査制です。ご紹介のある方のみ、本人確認と面談を経てご案内します。
+              </p>
+            </div>
+          </div>
           <p className="demo-note">
             ※ 本ページはプレオープン（テスト公開）です。サービスはまだ開始しておらず、正式オープンに向けて準備中です。
           </p>
