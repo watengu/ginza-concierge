@@ -1,111 +1,180 @@
 export default function Page() {
   return (
     <main>
-      <header className="site-head">
-        <p className="wordmark">銀座エグゼクティブ・コンシェルジュ</p>
-        <p className="head-note">By Invitation Only</p>
-      </header>
+      <section className="gate">
+        <img className="gate-photo" src="fv-ginza-night.webp" alt="夜の銀座の街並み" />
+        <div className="gate-veil" />
+        <div className="gate-in">
+          <p className="pill fade d1">Pre-Open — テスト公開中（オープン前）</p>
+          <div className="gate-mid fade d2">
+            <p className="gate-en">GINZA EXECUTIVE CONCIERGE</p>
+            <h1>
+              銀座エグゼクティブ
+              <br />
+              コンシェルジュ
+            </h1>
+          </div>
+          <div className="gate-btns fade d3">
+            <a className="gate-btn gold" href="#contact">
+              問い合わせる
+            </a>
+            <a className="gate-btn ghost" href="#index">
+              中を見る
+            </a>
+          </div>
+        </div>
+      </section>
 
-      <section className="hero">
-        <p className="preopen fade d1">Pre-Open — テスト公開中（オープン前）</p>
-        <h1 className="fade d2">
-          銀座で、ゲームを囲む
-          <br />
-          静かな時間を。
-        </h1>
-        <p className="hero-sub fade d3">
-          知る人ぞ知る方々へ、銀座の開かれた場所でお会いする、完全紹介制のご案内です。
-        </p>
-        <div className="fade d4">
-          <a className="cta" href="#contact">
-            問い合わせる
+      <section className="room" id="index">
+        <div className="room-in">
+          <p className="room-label">INDEX</p>
+          <nav className="idx">
+            <a href="#story">
+              お約束 <span>STORY</span>
+            </a>
+            <a href="#space">
+              空間と時間 <span>SPACE</span>
+            </a>
+            <a href="#flow">
+              扉の開き方 <span>FLOW</span>
+            </a>
+            <a href="#contact">
+              お問い合わせ <span>CONTACT</span>
+            </a>
+          </nav>
+          <p className="idx-note">どの部屋からも、お問い合わせへ一手で戻れます。</p>
+        </div>
+      </section>
+
+      <section className="room" id="story">
+        <div className="room-in">
+          <p className="room-label">STORY</p>
+          <h2>
+            銀座の夕方、見知らぬ誰かと、
+            <br />
+            ひとつのゲームを囲む。
+          </h2>
+          <div className="lines">
+            <p>
+              相手は、<strong>審査と本人確認を通った人だけ</strong>です。
+            </p>
+            <p>
+              会う場所は、銀座の開かれた場所だけ。
+              <br />
+              <strong>個室には入りません。</strong>
+            </p>
+            <p>
+              あるのは、盤面と会話だけ。
+              <br />
+              <strong>身体に触れるサービスは、ありません。</strong>
+            </p>
+            <p>
+              連絡先は、交換しません。
+              <br />
+              その場かぎりの時間だから、安心して座れます。
+            </p>
+          </div>
+          <hr className="gold-rule" />
+          <a className="to-contact" href="#contact">
+            問い合わせる →
           </a>
         </div>
-        <p className="scroll-hint fade d5">Scroll</p>
       </section>
 
-      <section className="photo-band" aria-hidden="false">
-        <img src="fv-ginza-dusk-v1.webp" alt="夕方の銀座の街並み" />
+      <section className="room" id="space">
+        <div className="room-in">
+          <p className="room-label">SPACE</p>
+          <h2>
+            会うのは、
+            <br />
+            銀座の開かれた場所で。
+          </h2>
+          <div className="gal">
+            <figure>
+              <img src="scene-cafe-go.webp" alt="銀座のカフェの窓辺に置かれた囲碁盤" />
+              <figcaption>
+                カフェ <span>CAFE</span>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="scene-chess.webp" alt="ラウンジのテーブルに置かれたチェス盤" />
+              <figcaption>
+                ラウンジ <span>LOUNGE</span>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="fv-ginza-dusk-v1.webp" alt="夕方の銀座の街並み" />
+              <figcaption>
+                店舗 ・ 街歩き <span>SHOP / WALK</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div className="lines">
+            <p>
+              ご案内は <strong>15:00 から 20:30 まで</strong>。
+              <br />
+              夕方の数時間だけです。夜更けの約束は、しません。
+            </p>
+          </div>
+          <hr className="gold-rule" />
+          <a className="to-contact" href="#contact">
+            問い合わせる →
+          </a>
+        </div>
       </section>
 
-      <section className="block">
-        <div className="wrap">
-          <div className="bento">
-            <div className="bento-main">
-              <h2>全部は、見せません。</h2>
-              <p>
-                詳細と実物のご案内は、ご紹介のある方へ個別にお渡しします。
-                ここに置くのは、判断に必要な最小限だけです。
-              </p>
+      <section className="room" id="flow">
+        <div className="room-in">
+          <p className="room-label">FLOW</p>
+          <h2>扉の開き方</h2>
+          <p className="note">
+            <strong>資料はお渡ししません。</strong>
+            <br />
+            詳細は、審査の後に初めてお伝えします。
+            お問い合わせの際に伺うのは、次の3つです。
+          </p>
+          <div className="ask">
+            <div>
+              <p className="ask-n">FIRST</p>
+              <h3>ご希望の時間帯</h3>
+              <p>15:00–20:30 の範囲で、第3希望まで。</p>
             </div>
-            <div className="bento-cell">
-              <h3>審査と本人確認</h3>
-              <p>ご利用・掲載とも、審査と本人確認が前提です。</p>
+            <div>
+              <p className="ask-n">SECOND</p>
+              <h3>ご紹介の経路</h3>
+              <p>紹介者の方のお名前を添えてください。ご紹介のない方へのご案内はありません。</p>
             </div>
-            <div className="bento-cell">
-              <h3>公共の空間のみ</h3>
-              <p>場所はラウンジ・カフェ・店舗・街歩きのみ。個室には入りません。</p>
-            </div>
-            <div className="bento-cell">
-              <h3>接触は含みません</h3>
-              <p>体験の核は、ゲームの共有と銀座の同行案内です。</p>
-            </div>
-            <div className="bento-cell">
-              <h3>夕方までの時間</h3>
-              <p>ご案内は15:00〜20:30の範囲に限ります。</p>
+            <div>
+              <p className="ask-n">THIRD</p>
+              <h3>ご希望の連絡方法</h3>
+              <p>内容を確認のうえ、個別にご案内します。</p>
             </div>
           </div>
-          <p className="about-meta">完全紹介制・審査制で、ご案内は日本語です。</p>
+          <hr className="gold-rule" />
+          <a className="to-contact" href="#contact">
+            問い合わせる →
+          </a>
         </div>
       </section>
 
-      <section className="block">
-        <div className="wrap">
-          <h2 className="block-title">扉の開き方</h2>
-          <div className="flow">
-            <div className="flow-step">
-              <p className="step-num">01</p>
-              <h3>お問い合わせ</h3>
-              <p>紹介者の方のお名前を添えて、ご連絡ください。</p>
-            </div>
-            <div className="flow-step">
-              <p className="step-num">02</p>
-              <h3>審査・ご同意</h3>
-              <p>本人確認と、利用規約へのご同意を事前にお願いします。</p>
-            </div>
-            <div className="flow-step">
-              <p className="step-num">03</p>
-              <h3>個別のご案内</h3>
-              <p>詳細・実物は、この段階で初めてご案内します。</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="block tint">
-        <div className="wrap">
-          <h2 className="block-title">お約束</h2>
-          <ul className="rule">
-            <li>お会いする場所は、公共の空間に限ります。客室・個室・私有空間には入りません</li>
-            <li>身体への接触は、サービスに含みません。依頼があってもお応えしません</li>
-            <li>ご利用はご紹介のある方のみ。本人確認と規約へのご同意が完了するまで、ご案内は確定しません</li>
-            <li>パートナーはいつでも、理由を説明せずセッションを中止できます</li>
-          </ul>
-        </div>
-      </section>
-
-      <section className="block" id="contact">
-        <div className="wrap contact">
-          <h2 className="contact-title">詳細は、扉の奥に。</h2>
-          <div className="routes">
-            <div className="route">
+      <section className="room" id="contact">
+        <div className="room-in">
+          <p className="room-label">CONTACT</p>
+          <h2>詳細は、扉の奥に。</h2>
+          <p className="note">
+            ご利用と掲載で、窓口を分けています。
+            <br />
+            どちらも審査制です。
+          </p>
+          <div className="routes2">
+            <div className="route2">
               <h3>ご利用の問い合わせ</h3>
               <p>
                 ご紹介のある方は、紹介者の方のお名前を添えてお問い合わせください。
                 内容を確認のうえ、個別にご案内します。
               </p>
             </div>
-            <div className="route">
+            <div className="route2">
               <h3>掲載の問い合わせ</h3>
               <p>
                 掲載も審査制です。ご紹介のある方のみ、本人確認と面談を経てご案内します。
@@ -119,18 +188,15 @@ export default function Page() {
       </section>
 
       <footer>
-        <div className="wrap foot-in">
+        <div className="room-in foot-in">
           <p>銀座エグゼクティブ・コンシェルジュ</p>
-          <p className="foot-sub">プレオープン（テスト公開中）— 実際のサービスは開始しておりません。</p>
+          <p className="foot-sub">
+            完全紹介制 ・ プレオープン（テスト公開中）
+            <br />
+            料金・種別のご案内は、審査の後にお渡しします。
+          </p>
         </div>
       </footer>
-
-      <div className="fixed-bar">
-        <p className="fixed-text">完全紹介制・プレオープン — 詳細はお問い合わせの奥に</p>
-        <a className="cta cta-bar" href="#contact">
-          問い合わせる
-        </a>
-      </div>
     </main>
   );
 }
